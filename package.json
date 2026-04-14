@@ -22,6 +22,7 @@
       {
         "command": "plantuml-helper.reverseRelation",
         "key": "ctrl+shift+/",
+        "mac": "cmd+shift+/",
         "when": "editorTextFocus && editorLangId == plantuml"
       }
     ]
