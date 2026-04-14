@@ -3,7 +3,8 @@
   "displayName": "rel-reverser",
   "description": "Relationship reverser for PlantUML",
   "version": "0.1.0",
-  "publisher": "EINS LLC.",
+  "publisher": "eins-llc",
+  "license": "MIT",
   "repository": { "type": "git", "url": "https://github.com/yiwaki/rel-reverser" },
   "engines": {
     "vscode": "^1.115.0"
@@ -18,6 +19,10 @@
       {
         "command": "plantuml-helper.reverseRelation",
         "title": "PlantUML: Reverse Relationship"
+      },
+      {
+        "command": "plantuml-helper.swapElements",
+        "title": "PlantUML: Swap Elements (Keep Relationship)"
       }
     ],
     "keybindings": [
@@ -25,6 +30,11 @@
         "command": "plantuml-helper.reverseRelation",
         "key": "ctrl+shift+/",
         "mac": "cmd+shift+/",
+        "when": "editorTextFocus && editorLangId == plantuml"
+      },
+      {
+        "command": "plantuml-helper.swapElements",
+        "key": "ctrl+shift+alt+/",
         "when": "editorTextFocus && editorLangId == plantuml"
       }
     ]
