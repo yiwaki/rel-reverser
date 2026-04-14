@@ -1,12 +1,10 @@
 export function reverseRelation(line: string): string {
-// 矢印の正規表現を拡張: オプション [...] 部分を許容
-    // グループ4: 矢印全体 (例: -[hidden]->, o-up->, ||--|{)
     const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s"<>|{}-]+|"[^"]+")(.*)$/u;
 
     const match = line.match(regex);
 	if (!match) {
 		return line;
-	}; // マッチしない場合は元の行を返す
+	}
 
     const [_, indent, leftCls, leftMul, arrow, rightMul, rightCls, label] = match;
 
@@ -28,7 +26,7 @@ export function reverseRelation(line: string): string {
         }
     }
 
-    // 2. 記号の反転 (o--, -->, <|-- など)
+    // 2. 記号の反転 (-->, <|--, }|-- など)
     const symbolMap: { [key: string]: string } = {
         '{': '}', '}': '{',
         '<': '>', '>': '<'
