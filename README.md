@@ -1,4 +1,4 @@
-# rel-reverser README
+# rel-reverser
 
 rel-reverser is a tool for reversing relationships in class diagrams or ER diagrams on PlantUML.
 
@@ -6,14 +6,14 @@ rel-reverser is a tool for reversing relationships in class diagrams or ER diagr
 
 Reverse the relationship between the classes as follows.
 
-before: "Class A" "\*"--> "1..5" "Class B" : > label
+before: "Class A" "\*"--> "1..5" "Class B" : > label\
 after: "Class B" "1..5" <--\* "\*" "Class A" : < label
 
 Just place the cursor on the line you want to change and press Ctrl - Shift - /.
 
 Pressing Ctrl - Shift - Alt - / swaps the only classes or entities (and their multiplicities) while keeping the relationship intact.
 
-before: "Class A" "1" --> "1..5" "Class B" : > label
+before: "Class A" "1" --> "1..5" "Class B" : > label\
 after: "Class B" "1..5" --> "1" "Class A" : > label
 
 It supports not only class diagrams but also ERD (Entity Relationship Diagrams), and accommodates the representation of all types of relationships.
