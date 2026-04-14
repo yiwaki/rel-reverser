@@ -1,4 +1,4 @@
-# rel-reverser
+# PlantUML Relationship Reverser
 
 rel-reverser is a tool for reversing relationships in class diagrams or ER diagrams on PlantUML.
 

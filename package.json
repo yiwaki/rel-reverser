@@ -1,8 +1,8 @@
 {
   "name": "rel-reverser",
-  "displayName": "rel-reverser",
+  "displayName": "PlantUML Relationship Reverser",
   "description": "Relationship reverser for PlantUML",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "eins-llc",
   "license": "MIT",
   "repository": { "type": "git", "url": "https://github.com/yiwaki/rel-reverser" },
