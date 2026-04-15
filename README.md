@@ -1,8 +1,8 @@
-![icon](images/icon.gif)
+![icon](https://github.com/yiwaki/rel-reverser/blob/main/images/icon.png)
 
 # PlantUML Relationship Reverser
 
-rel-reverser is a tool for reversing relationships in class diagrams or ER diagrams on PlantUML.
+PlantUML Relationship Reverser is a tool for reversing relationships in class diagrams or ERDs (Entity-Relationship diagrams) on PlantUML.
 
 ## Features
 
