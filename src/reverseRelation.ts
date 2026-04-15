@@ -1,5 +1,5 @@
 export function reverseRelation(line: string): string {
-    const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o\*\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s":<>|{}-]+|"[^"]+")(.*)$/u;
+    const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o#\+\^\*\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s":<>|{}-]+|"[^"]+")(.*)$/u;
 
     const match = line.match(regex);
 	if (!match) {
