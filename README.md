@@ -2,7 +2,7 @@
 
 # PlantUML Relationship Reverser
 
-PlantUML Relationship Reverser is a tool for reversing relationships in class diagrams or ERDs (Entity-Relationship diagrams) on PlantUML.
+PlantUML Relationship Reverser is a tool for reversing relationships in several diagrams, including class diagrams or ERDs (Entity-Relationship Diagrams) on PlantUML.
 
 ## Features
 
