@@ -1,12 +1,12 @@
 export function reverseRelation(line: string): string {
-    const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s"<>|{}-]+|"[^"]+")(.*)$/u;
+    const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o\*\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s":<>|{}-]+|"[^"]+")(.*)$/u;
 
     const match = line.match(regex);
 	if (!match) {
 		return line;
 	}
 
-    const [_, indent, leftCls, leftMul, arrow, rightMul, rightCls, label] = match;
+    const [_, indent, leftElm, leftMul, arrow, rightMul, rightElm, label] = match;
 
     // --- 矢印の反転処理 ---
     let newArrow = arrow;
@@ -49,5 +49,5 @@ export function reverseRelation(line: string): string {
     const lm = leftMul ? ` ${leftMul}` : "";
     const rm = rightMul ? ` ${rightMul}` : "";
 
-    return `${indent}${rightCls}${lm} ${newArrow}${rm} ${leftCls}${newLabel}`;
+    return `${indent}${rightElm}${rm} ${newArrow}${lm} ${leftElm}${newLabel}`;
 }

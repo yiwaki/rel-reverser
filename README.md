@@ -9,9 +9,9 @@ Reverse the relationship between the classes as follows.
 before: "Class A" "\*"--> "1..5" "Class B" : > label\
 after: "Class B" "1..5" <--\* "\*" "Class A" : < label
 
-Just place the cursor on the line you want to change and press Ctrl - Shift - /.
+Just place the cursor on the line you want to change and press Ctrl+Shift+/.
 
-Pressing Ctrl - Shift - Alt - / swaps the only classes or entities (and their multiplicities) while keeping the relationship intact.
+Pressing Ctrl+Shift+Alt+/ swaps the only classes or entities while keeping the relationship intact.
 
 before: "Class A" "1" --> "1..5" "Class B" : > label\
 after: "Class B" "1..5" --> "1" "Class A" : > label
@@ -22,6 +22,6 @@ It supports not only class diagrams but also ERD (Entity Relationship Diagrams),
 
 Users appreciate release notes as you update your extension.
 
-### 0.1.0
+### 1.0.0
 
 Initial release.

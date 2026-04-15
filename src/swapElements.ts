@@ -1,16 +1,16 @@
 export function swapElements(line: string): string {
     // 矢印もラベルも一切加工せず、クラスと多重度だけをスワップ
-    const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s"<>|{}-]+|"[^"]+")(.*)$/u;
+    const regex = /^(\s*)([^\s"<>|{}-]+|"[^"]+")\s+("[^"]*")?\s*([|{}o\*\-\.<>~\\/x+?\[\]\w]+)\s*("[^"]*")?\s*([^\s":<>|{}-]+|"[^"]+")(.*)$/u;
 
     const match = line.match(regex);
     if (!match) {
         return line;
     }
 
-    const [_, indent, leftCls, leftMul, arrow, rightMul, rightCls, label] = match;
+    const [_, indent, leftElm, leftMul, arrow, rightMul, rightElm, label] = match;
 
     const lm = leftMul ? ` ${leftMul}` : "";
     const rm = rightMul ? ` ${rightMul}` : "";
 
-    return `${indent}${rightCls}${rm} ${arrow}${lm} ${leftCls}${label}`;
+    return `${indent}${rightElm}${lm} ${arrow}${rm} ${leftElm}${label}`;
 }
