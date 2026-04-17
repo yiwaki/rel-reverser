@@ -6,6 +6,8 @@ PlantUML Relationship Reverser is a tool for reversing relationships in several 
 
 ## Features
 
+![demo](.images/demo.gif)
+
 Reverse the relationship between the classes as follows.
 
 before: "Class A" "\*" \*--> "1..5" "Class B" : > label\
