@@ -4,7 +4,7 @@ PlantUML Relationship Reverser is a tool for reversing relationships in several 
 
 ## Features
 
-![demo](images/demo.gif)
+<img src="https://github.com/yiwaki/rel-reverser/image/demo.gif">
 
 Reverse the relationship between the classes as follows.
 
@@ -14,13 +14,14 @@ Reverse the relationship between the classes as follows.
 
 Just place the cursor on the line you want to change and press Ctrl+Shift+/.
 
-Pressing Ctrl+Shift+Alt+/ swaps the only classes or entities while keeping the relationship intact.
+Pressing Ctrl+Shift+Alt+/ swaps the only classes or entities while keeping the relationship or arrow intact.
 
 "Class A" "1" -up-> "1..5" "Class B" : > label\
 ⇔\
 "Class B" "1..5" -up-> "1" "Class A" : > label
 
-It supports not only class diagrams but also ERD (Entity Relationship Diagrams), and accommodates the representation of all types of relationships.
+It supports not only class diagrams but also other types of diagrams, such as ERDs (Entity-Relationship Diagrams).
+It also supports all types of relationships and arrows supported by PlantUML.
 
 ## Release Notes
 
