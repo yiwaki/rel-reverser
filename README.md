@@ -4,7 +4,7 @@ PlantUML Relationship Reverser is a tool for reversing relationships in several 
 
 ## Features
 
-![demo](https://github.com/yiwaki/rel-reverser/blob/main/images/demo.gif)
+![demo](images/demo.gif)
 
 Reverse the relationship between the classes as follows.
 
