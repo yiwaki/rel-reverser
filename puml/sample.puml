@@ -1,7 +1,7 @@
 @startuml sample
 skinparam classAttributeIconSize 0
 
-ClassA <--* ClassB: < creates
-ClassB #-- ClassC
+ClassA <-right-* ClassB: < creates
+ClassB -[#blue,thickness=3]-> ClassC: < uses
 
 @enduml
